@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubia2-manual
+  labels:
+    app: kubia2
+spec:
+  containers:
+  - image: shouhai/kubia2
+    name: kubia2
+    ports:
+    - containerPort: 8080
+      name: http
+    - containerPort: 443
+      name: https
